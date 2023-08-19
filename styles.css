@@ -35,10 +35,80 @@ nav a {
     background-color: rgb(254, 101, 70);
     text-decoration: none;  /* 移除链接的下划线 */
 }
+.arrow {
+    position: absolute;
+    width: 1px;
+    top:50px;
+    right:475px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid black; /* 可以根据需要调整箭头的大小和颜色 */
+}
+
 .nav-link2{
     position:absolute;  /* 将元素定位为绝对定位 */
     top: 20px;  /* 距离顶部的距离 */
-    right: 20px;  /* 距离右侧的距离 */
+    right: 400px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(42, 254, 247);
+    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(254, 101, 70);
+    text-decoration: none;  /* 移除链接的下划线 */
+
+}
+.nav-link3{
+    position:absolute;  /* 将元素定位为绝对定位 */
+    top: 20px;  /* 距离顶部的距离 */
+    right: 320px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(42, 254, 247);
+    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(254, 101, 70);
+    text-decoration: none;  /* 移除链接的下划线 */
+
+}
+.nav-link4{
+    position:absolute;  /* 将元素定位为绝对定位 */
+    top: 18px;  /* 距离顶部的距离 */
+    right: 130px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(42, 254, 247);
+    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(254, 101, 70);
+    text-decoration: none;  /* 移除链接的下划线 */
+
+}
+.nav-link5{
+    position:absolute;  /* 将元素定位为绝对定位 */
+    top: 19px;  /* 距离顶部的距离 */
+    right: 235px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(42, 254, 247);
+    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(254, 101, 70);
+    text-decoration: none;  /* 移除链接的下划线 */
+
+}
+.nav-link6{
+    position:absolute;  /* 将元素定位为绝对定位 */
+    top: 18px;  /* 距离顶部的距离 */
+    right: 30px;  /* 距离右侧的距离 */
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
@@ -55,20 +125,6 @@ nav a {
     color: white;  /* 鼠标悬停时的文字颜色 */
   }
   
-.background {
-    background-image: 
-        url('file:///C:/Users/liuchen/OneDrive/%E5%9B%BE%E7%89%87/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230818171341.jpg'),
-        url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F29%2F20180629130141_tcvgw.thumb.1000_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1695033598&t=cb1aeee8bf25f9c07e71cf8f768a4645');
-
-    background-repeat: no-repeat, no-repeat;
-    background-size: 500px 1000px, 500px 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(3px), blur(3px); /* 添加背景模糊效果 */
-    background-position: left center, right center;
-}
-
 
 .title1 {
     font-size: 2em;
@@ -90,6 +146,12 @@ nav a {
     font-size: 24px;
     color: white;
   }
+  .small-text3{
+    position:absolute;
+    top:45px;
+    right:500px;
+}
 nav, #bilibili-videos {
     background-color: transparent;
 }
+
