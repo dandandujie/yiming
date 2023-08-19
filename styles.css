@@ -28,11 +28,11 @@ nav a {
 .nav-link1 {
     margin: 40px 40px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border: 1px solid rgb(24, 22, 22);  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
-    background-color: rgb(254, 101, 70);
+    background-color: rgb(38, 31, 30);
     text-decoration: none;  /* 移除链接的下划线 */
 }
 .arrow {
@@ -42,7 +42,7 @@ nav a {
     right:420px;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
-    border-left: 15px solid black; /* 可以根据需要调整箭头的大小和颜色 */
+    border-left: 15px solid white; /* 可以根据需要调整箭头的大小和颜色 */
 }
 
 .nav-link2{
@@ -52,11 +52,11 @@ nav a {
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border: 1px solid black;  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
-    background-color: rgb(254, 101, 70);
+    background-color: black;
     text-decoration: none;  /* 移除链接的下划线 */
 
 }
@@ -67,11 +67,11 @@ nav a {
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border: 1px solid black;  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
-    background-color: rgb(254, 101, 70);
+    background-color: black;
     text-decoration: none;  /* 移除链接的下划线 */
 
 }
@@ -82,11 +82,11 @@ nav a {
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border: 1px solid black;  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
-    background-color: rgb(254, 101, 70);
+    background-color:black;
     text-decoration: none;  /* 移除链接的下划线 */
 
 }
@@ -97,11 +97,11 @@ nav a {
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border: 1px solid black;  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
-    background-color: rgb(254, 101, 70);
+    background-color: black;
     text-decoration: none;  /* 移除链接的下划线 */
 
 }
@@ -112,11 +112,11 @@ nav a {
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border: 1px solid black);  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
-    background-color: rgb(254, 101, 70);
+    background-color: black;
     text-decoration: none;  /* 移除链接的下划线 */
 
 }
@@ -133,7 +133,19 @@ nav a {
     align-items: center;
     background-position: center;
 }
-
+.background::before {
+    content: "";
+    position: fixed;
+    top:-160px;
+    right: -50px;
+    width: 450px;  /* 图片的宽度 */
+    height: 280px;  /* 图片的高度 */
+    background-image: url('https://o.remove.bg/downloads/4733e1a1-d65e-4945-8bca-a1a6d29bea03/58954944d4c4c_610-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 85%,  0 85%);;
+}
 
   
 
@@ -145,22 +157,23 @@ nav a {
 }
   .small-text1 {
     position: absolute;
-    top: 30px;
+    top: 80px;
     left: 30px;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
   }
   .small-text2 {
     position: absolute;
     bottom: 20px;
-    left: 10px;
-    font-size: 24px;
+    left: 40px;
+    font-size: 30px;
     color: white;
   }
   .small-text3{
     position:fixed;
     top:37px;
     right:440px;
+    color:white;
 }
 nav, #bilibili-videos {
     background-color: transparent;
