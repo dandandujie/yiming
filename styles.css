@@ -39,7 +39,7 @@ nav a {
     position: absolute;
     width: 1px;
     top:50px;
-    right:475px;
+    right:420px;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
     border-left: 15px solid black; /* 可以根据需要调整箭头的大小和颜色 */
@@ -48,7 +48,7 @@ nav a {
 .nav-link2{
     position:absolute;  /* 将元素定位为绝对定位 */
     top: 20px;  /* 距离顶部的距离 */
-    right: 400px;  /* 距离右侧的距离 */
+    right: 335px;  /* 距离右侧的距离 */
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
@@ -63,7 +63,7 @@ nav a {
 .nav-link3{
     position:absolute;  /* 将元素定位为绝对定位 */
     top: 20px;  /* 距离顶部的距离 */
-    right: 320px;  /* 距离右侧的距离 */
+    right: 255px;  /* 距离右侧的距离 */
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
@@ -77,8 +77,8 @@ nav a {
 }
 .nav-link4{
     position:absolute;  /* 将元素定位为绝对定位 */
-    top: 18px;  /* 距离顶部的距离 */
-    right: 130px;  /* 距离右侧的距离 */
+    top: 19px;  /* 距离顶部的距离 */
+    right: 85px;  /* 距离右侧的距离 */
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
@@ -93,7 +93,7 @@ nav a {
 .nav-link5{
     position:absolute;  /* 将元素定位为绝对定位 */
     top: 19px;  /* 距离顶部的距离 */
-    right: 235px;  /* 距离右侧的距离 */
+    right: 180px;  /* 距离右侧的距离 */
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
@@ -107,8 +107,8 @@ nav a {
 }
 .nav-link6{
     position:absolute;  /* 将元素定位为绝对定位 */
-    top: 18px;  /* 距离顶部的距离 */
-    right: 30px;  /* 距离右侧的距离 */
+    top: 19px;  /* 距离顶部的距离 */
+    right: 5px;  /* 距离右侧的距离 */
     font-size:12px;
     margin: 10px 10px;
     color: rgb(42, 254, 247);
@@ -120,7 +120,7 @@ nav a {
     text-decoration: none;  /* 移除链接的下划线 */
 
 }
-.nav-link1:hover, .nav-link2:hover {
+.nav-link1:hover, .nav-link2:hover,.nav-link3:hover,.nav-link4:hover,.nav-link5:hover,.nav-link6:hover {
     background-color: rgb(180, 94, 77);  /* 鼠标悬停时的背景颜色 */
     color: white;  /* 鼠标悬停时的文字颜色 */
   }
@@ -148,10 +148,9 @@ nav a {
   }
   .small-text3{
     position:absolute;
-    top:45px;
-    right:500px;
+    top:47px;
+    right:440px;
 }
 nav, #bilibili-videos {
     background-color: transparent;
 }
-
