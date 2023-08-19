@@ -36,9 +36,9 @@ nav a {
     text-decoration: none;  /* 移除链接的下划线 */
 }
 .arrow {
-    position: absolute;
+    position: fixed;
     width: 1px;
-    top:50px;
+    top:40px;
     right:420px;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
@@ -46,7 +46,7 @@ nav a {
 }
 
 .nav-link2{
-    position:absolute;  /* 将元素定位为绝对定位 */
+    position:fixed;  /* 将元素定位为绝对定位 */
     top: 20px;  /* 距离顶部的距离 */
     right: 335px;  /* 距离右侧的距离 */
     font-size:12px;
@@ -61,7 +61,7 @@ nav a {
 
 }
 .nav-link3{
-    position:absolute;  /* 将元素定位为绝对定位 */
+    position:fixed;  /* 将元素定位为绝对定位 */
     top: 20px;  /* 距离顶部的距离 */
     right: 255px;  /* 距离右侧的距离 */
     font-size:12px;
@@ -76,7 +76,7 @@ nav a {
 
 }
 .nav-link4{
-    position:absolute;  /* 将元素定位为绝对定位 */
+    position:fixed;  /* 将元素定位为绝对定位 */
     top: 19px;  /* 距离顶部的距离 */
     right: 85px;  /* 距离右侧的距离 */
     font-size:12px;
@@ -91,7 +91,7 @@ nav a {
 
 }
 .nav-link5{
-    position:absolute;  /* 将元素定位为绝对定位 */
+    position:fixed;  /* 将元素定位为绝对定位 */
     top: 19px;  /* 距离顶部的距离 */
     right: 180px;  /* 距离右侧的距离 */
     font-size:12px;
@@ -106,7 +106,7 @@ nav a {
 
 }
 .nav-link6{
-    position:absolute;  /* 将元素定位为绝对定位 */
+    position:fixed;  /* 将元素定位为绝对定位 */
     top: 19px;  /* 距离顶部的距离 */
     right: 5px;  /* 距离右侧的距离 */
     font-size:12px;
@@ -124,6 +124,17 @@ nav a {
     background-color: rgb(180, 94, 77);  /* 鼠标悬停时的背景颜色 */
     color: white;  /* 鼠标悬停时的文字颜色 */
   }
+  .background {
+    background-image: url('https://img.zcool.cn/community/01f18c600becbe11013e3991132b14.png@1280w_1l_2o_100sh.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+
   
 
 .title1 {
@@ -147,8 +158,8 @@ nav a {
     color: white;
   }
   .small-text3{
-    position:absolute;
-    top:47px;
+    position:fixed;
+    top:37px;
     right:440px;
 }
 nav, #bilibili-videos {
