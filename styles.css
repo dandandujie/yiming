@@ -5,6 +5,7 @@ body {
 nav {
     background-color: #f8f9fa;
     padding: 10px;
+    position: relative;
 }
 
 nav a {
@@ -15,6 +16,7 @@ nav a {
     margin-top: 20px;
 }
 .navbar {
+    position:relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,15 +25,30 @@ nav a {
     font-size: 2em;
     
 }
-.nav-link {
+.nav-link1 {
     margin: 40px 40px;
     color: rgb(42, 254, 247);
-    border: 1px solid rgb(230, 91, 63);  /* 添加一个黑色的边框 */
+    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
     border-radius: 50px;  /* 设置边框的圆角 */
     padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
     display:inline-block;
     background-color: rgb(254, 101, 70);
     text-decoration: none;  /* 移除链接的下划线 */
+}
+.nav-link2{
+    position:absolute;  /* 将元素定位为绝对定位 */
+    top: 20px;  /* 距离顶部的距离 */
+    right: 20px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(42, 254, 247);
+    border: 1px solid rgb(230, 91, 63);  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(254, 101, 70);
+    text-decoration: none;  /* 移除链接的下划线 */
+
 }
 .background {
     background-image: url('https://img2018.cnblogs.com/blog/1534387/201908/1534387-20190811001638640-2010579868.png');
@@ -42,12 +59,26 @@ nav a {
     align-items: center;
 }
 
-.title {
+.title1 {
     font-size: 2em;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     height: 20vh;
 }
+  .small-text1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+    color: white;
+  }
+  .small-text2 {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-size: 24px;
+    color: white;
+  }
 nav, #bilibili-videos {
     background-color: transparent;
 }
