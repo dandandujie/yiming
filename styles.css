@@ -61,7 +61,7 @@ nav a {
         url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201806%2F29%2F20180629130141_tcvgw.thumb.1000_0.jpg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1695033598&t=cb1aeee8bf25f9c07e71cf8f768a4645');
 
     background-repeat: no-repeat, no-repeat;
-    background-size: 1000px 1000px, 500px 1000px;
+    background-size: 500px 1000px, 500px 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
