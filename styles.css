@@ -121,7 +121,16 @@ nav a {
     text-decoration: none;  /* 移除链接的下划线 */
     font-size: 15px;
 }
-.nav-link1:hover, .nav-link2:hover,.nav-link3:hover,.nav-link4:hover,.nav-link5:hover,.nav-link6:hover {
+.nav-link7 {
+    position: absolute;
+    top: 80px;
+    left: -450px;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;  /* 移除链接的下划线 */
+}
+.nav-link1:hover, .nav-link2:hover,.nav-link3:hover,.nav-link4:hover,.nav-link5:hover,.nav-link6:hover,.nav-link7:hover,.toggle-button:hover {
     background-color: rgb(180, 94, 77);  /* 鼠标悬停时的背景颜色 */
     color: white;  /* 鼠标悬停时的文字颜色 */
   }
@@ -157,13 +166,8 @@ nav a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     height: 20vh;
 }
-  .small-text1 {
-    position: absolute;
-    top: 80px;
-    left: 30px;
-    font-size: 50px;
-    color: white;
-  }
+ 
+  
   .small-text2 {
     position: fixed;
     bottom: 44px;
