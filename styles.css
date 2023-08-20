@@ -278,19 +278,6 @@ nav, #bilibili-videos {
         color: white;
     }
 }
-.background::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://o.remove.bg/downloads/e6e2d189-6d2d-4d50-ace9-146c7c6eacf1/d7d999e756cdeb34e924e3eb617fde52-removebg-preview.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-}
-
 
 /*电脑端样式*/
 @media screen and (min-width: 768px) {
