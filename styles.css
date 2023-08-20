@@ -123,8 +123,8 @@ nav a {
 }
 .nav-link7 {
     position: absolute;
-    top: 80px;
-    left: -450px;
+    top:260px;
+    left: -410px;
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -233,121 +233,5 @@ nav, #bilibili-videos {
   }
   
   
-/*平板和电脑样式*/
-  @media  only screen and (min-width: 601px) {
-    .navbar {
-        font-size: 1.5em;
-        width:auto;
-        text-align:center;/*确保选项居中显示*/
-    }
-
-    .nav-link1{
-        white-space:normal;/*允许选项换行显示*/
-    }
-    .nav-link2,
-    .nav-link3,
-    .nav-link4,
-    .nav-link5,
-    .nav-link6 {
-        font-size: 10px;
-        margin: 5px;
-        padding: 5px;
-    }
-
-    .nav-link7 {
-        font-size: 30px;
-    }
-
-    .toggle-button {
-        top: 20px;
-        right: 10px;
-        font-size: 12px;
-    }
-
-    .sidebar-container {
-        top: 250px;
-    }
-
-    .sidebar {
-        width: 200px;
-        font-size: 14px;
-    }
-
-    .toggle-button:hover {
-        background-color: rgb(180, 94, 77);
-        color: white;
-    }
-    
-}
-
-
-
-/*手机样式*/
-@media only screen and (max-width: 600px) {
-    .navbar {
-        font-size: 0.5em;
-        text-align:center;/*确保选项居中显示*/
-    }
-
-    .nav-link1,
-    .nav-link2{
-        font-size: 10px;
-        margin: 5px;
-        padding: 5px;
-    }
-    .nav-link3{
-        font-size: 10px;
-        margin: 5px;
-        padding: 5px;
-    }
-    .nav-link4{
-        font-size: 10px;
-        margin: 5px;
-        padding: 5px;
-    }
-    .nav-link5{
-        font-size: 10px;
-        margin: 5px;
-        padding: 5px;
-    }
-    .nav-link6 {
-        font-size: 8px;
-        margin: 5px;
-        padding: 5px;
-    }
-
-    .nav-link7 {
-        font-size: 10px;
-    }
-
-    .toggle-button {
-        top: 70px;
-        right: 250px;
-        font-size: 15px;
-    }
-
-    .sidebar-container {
-        top: 390px;
-    }
-
-    .sidebar {
-        width: 250px;
-        font-size: 16px;
-    }
-
-    .toggle-button:hover {
-        background-color: rgb(180, 94, 77);
-        color: white;
-    }
-    .small-text2{
-        font-size:18px ;
-    }
-    #bilibili-videos iframe {
-        width: 250px;
-        height: 100px;
-        float:right;
-        margin-right:0px;
-    }
-}  
-
+  
 
