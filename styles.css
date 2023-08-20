@@ -284,6 +284,7 @@ nav, #bilibili-videos {
 @media screen and (min-width: 768px) {
     .navbar {
         font-size: 2em;
+        text-align:center;/*确保选项居中显示*/
     }
 
     .nav-link1,
