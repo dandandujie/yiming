@@ -234,14 +234,14 @@ nav, #bilibili-videos {
   
   
  /*手机端竖屏样式*/
-  @media screen and (orientation:portrait) and (max-device-width:1220px) and (max-device-height:2520px) {
+  @media screen and (orientation:portrait) and (max-device-width:600px) and (max-device-height:800px) {
     .navbar {
         font-size: 1.5em;
         width:auto;
         text-align:center;/*确保选项居中显示*/
     }
 
-    .nav-link1,{
+    .nav-link1{
         white-space:normal;/*允许选项换行显示*/
     }
     .nav-link2,
@@ -282,7 +282,7 @@ nav, #bilibili-videos {
 
 
 /*手机端横屏样式*/
-@media screen and (orientation:landscape) and (max-device-width:2520px) and (max-device-height:1220px) {
+@media screen and (orientation:landscape) and (max-device-width:800px) and (max-device-height:600px) {
     .navbar {
         font-size: 0.5em;
         text-align:center;/*确保选项居中显示*/
