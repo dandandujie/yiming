@@ -233,8 +233,8 @@ nav, #bilibili-videos {
   }
   
   
- /*手机端竖屏样式*/
-  @media screen and (orientation:portrait) and (max-device-width:1000px) and (max-device-height:2000px) {
+/*平板和电脑样式*/
+  @media  only screen and (min-width: 601px) {
     .navbar {
         font-size: 1.5em;
         width:auto;
@@ -281,8 +281,9 @@ nav, #bilibili-videos {
 }
 
 
-/*手机端横屏样式*/
-@media screen and (orientation:landscape) and (max-device-width:2561px) and (max-device-height:1061px) {
+
+/*手机样式*/
+@media only screen and (max-width: 600px) {
     .navbar {
         font-size: 0.5em;
         text-align:center;/*确保选项居中显示*/
@@ -347,5 +348,6 @@ nav, #bilibili-videos {
         float:right;
         margin-right:0px;
     }
-    
+}  
+
 
