@@ -20,7 +20,7 @@
      <div class="small-text2">YIZHAN.YIMING430</div>
      <div class="small-text3">其他网址</div>
         <div class="arrow"></div>
-
+        
     <nav class="navbar">
         <a class="nav-link2" href="https://www.baidu.com">百度</a>
         <a class="nav-link3" href="https://www.google.com">谷歌</a>
@@ -29,18 +29,42 @@
         <a class="nav-link6" href="https://github.com">Github</a>
         <div class="title1">欢迎你来到伊洺驿站<br> yizhan.yiming430.xyz</div>
         <a class="nav-link1" href="index.html">主页</a>
+        <div id="bilibili-videos">
+            <iframe src="https://player.bilibili.com/player.html?aid=659738412&bvid=BV1bh4y1Q7fV&cid=1230784022&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
         <a class="nav-link1" href="https://space.bilibili.com/442149069">bilibili小屋</a>
         <a class="nav-link1" href="https://bing.yiming430.xyz">BingAI（伊洺部署，不需魔法，但不稳定)</a>
         <a class="nav-link1" href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing AI（官网，需要魔法)</a>
         <a class="nav-link1" href="https://evndt.aitianhu.site/#/chat/1002
-        ">GPT3.5/4.0（免费无限制）</a>
+        ">GPT3.5/4.0（免费无限制,4.0不稳定）</a>
     </nav>
+        <div class="sidebar-container">
+        
+        <div class="sidebar">
+        <ul>
+            <li>作者：伊洺</li>
+            <li>关于网站</li>
+            <li>联系QQ:2143998586</li>
+            <li>说明:这是小白第一次搭建自己的网站,可供大家使用,关于添加内容和外观修改如果大家有什么好的建议可以联系上面的QQ哦
+        </ul>
+             <button class="toggle-button" onclick="toggleSidebar()">更多</button>
+        </div>
+       <script>
+        const toggleButton = document.querySelector('.toggle-button');
+const sidebar = document.querySelector('.sidebar');
+
+toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('sidebar-open');
+});
+
+      </script>
+      
     </nav>
     </nav>
     
-    <div id="bilibili-videos">
-        <!-- 在这里展示哔哩哔哩视频推荐和链接 -->
-    </div>
+    
+    
     <script src="main.js"></script>
 </body>
+</html>
 </html>
