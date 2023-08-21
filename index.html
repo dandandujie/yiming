@@ -2,30 +2,344 @@
 <html>
 <head>
     <title>伊洺驿站</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <style>
-        body {
+body {
             font-family: 'ZCOOL KuaiLe', cursive;
             text-align: center;
+            background-image: url('background.mp4');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
-        .container{
-            display:flex;
+
+/* 通用样式 */
+        .container {
+            display: flex;
             flex-direction: column;
-            align-items:center;
+            align-items: center;
         }
-        /*手机样式*/
+
+        /* 手机样式 */
         @media only screen and (max-width: 600px) {
             .container {
-                width: 40%;
+                width: 80%; /* 调整手机样式的宽度 */
             }
-        }        
+        }
+
+        /* 电脑样式 */
+        @media only screen and (min-width: 601px) {
+            .container {
+                width: 50%; /* 调整电脑样式的宽度 */
+            }
+        }
+
+        /* 平板样式 */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            .container {
+                width: 70%; /* 调整平板样式的宽度 */
+            }
+        }
+
+nav {
+            background-color: rgba(248, 249, 250, 0.8);
+            padding: 10px;
+            position: relative;
+        }
+
+        nav a {
+            margin-right: 10px;
+        }
+
+        /* 公共标题样式 */
+       .title {
+            font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            height: 20vh;
+        }
+
+
+#bilibili-videos {
+    margin-top: 20px;
+}
+.navbar {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+    
+}
+.nav-link1 {
+    text-decoration: none;
+    /* Existing styles... */
+    opacity: 0; /* Initially set the opacity to 0 */
+    transform: translateY(20px); /* Move the button down by 20px */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition effects */
+}
+
+/* Add animation for the entrance effect */
+.nav-link1.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/* Add button halo effect on hover */
+.nav-link1:hover::before {
+    transform: scale(1.3);
+}
+
+.nav-link-container {
+    background-color: pink;
+    border-radius: 20px; /* Adjust the radius as needed */
+    padding: 5px 15px; /* Adjust padding as needed */
+    margin: 10px 0; /* Adjust margin as needed */
+    display: inline-block; /* Display as inline block */
+}
+
+.arrow {
+    position: fixed;
+    width: 1px;
+    top:40px;
+    right:400px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid white; /* 可以根据需要调整箭头的大小和颜色 */
+}
+
+.nav-link2{
+    position:fixed;  /* 将元素定位为绝对定位 */
+    top: 20px;  /* 距离顶部的距离 */
+    right: 325px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(119, 64, 238);
+    border: 1px solid black;  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(240, 228, 163);
+    text-decoration: none;  /* 移除链接的下划线 */
+    font-size: 15px;
+
+}
+.nav-link3{
+    position:fixed;  /* 将元素定位为绝对定位 */
+    top: 20px;  /* 距离顶部的距离 */
+    right: 255px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(119, 64, 238);
+    border: 1px solid black;  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(240, 228, 163);
+    text-decoration: none;  /* 移除链接的下划线 */
+    font-size: 15px;
+}
+.nav-link4{
+    position:fixed;  /* 将元素定位为绝对定位 */
+    top: 19px;  /* 距离顶部的距离 */
+    right: 85px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(119, 64, 238);
+    border: 1px solid black;  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color:rgb(240, 228, 163);
+    text-decoration: none;  /* 移除链接的下划线 */
+    font-size: 15px;
+}
+.nav-link5{
+    position:fixed;  /* 将元素定位为绝对定位 */
+    top: 19px;  /* 距离顶部的距离 */
+    right: 180px;  /* 距离右侧的距离 */
+    font-size:12px;
+    margin: 10px 10px;
+    color: rgb(119, 64, 238);
+    border: 1px solid black;  /* 添加一个橙色的边框 */
+    border-radius: 50px;  /* 设置边框的圆角 */
+    padding: 10px;  /* 添加一些内边距，使文本离边框有一些距离 */
+    display:inline-block;
+    background-color: rgb(240, 228, 163);
+    text-decoration: none;  /* 移除链接的下划线 */
+    font-size: 15px;
+}
+.nav-link6 {
+    position: fixed;
+    top: 19px;
+    right: 5px;
+    font-size: 12px;
+    margin: 10px;
+    color: rgb(119, 64, 238);
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(240, 228, 163);
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-link7 {
+    position: absolute;
+    top:260px;
+    left: 110px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(119, 64, 238);
+    text-decoration: none;  /* 移除链接的下划线 */
+}
+.nav-link1:hover, .nav-link2:hover,.nav-link3:hover,.nav-link4:hover,.nav-link5:hover,.nav-link6:hover,.nav-link7:hover,.toggle-button:hover {
+    background-color: rgb(180, 94, 77);  /* 鼠标悬停时的背景颜色 */
+    color: white;  /* 鼠标悬停时的文字颜色 */
+  }
+  
+  .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+  
+
+.title1 {
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    opacity: 0; /* 初始透明度设置为 0 */
+    transform: translateX(-20px); /* 初始位置向左偏移 */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* 添加渐变动画效果 */
+}
+ 
+ 
+  
+  .small-text2 {
+    position: fixed;
+    bottom: 44px;
+    left: 40px;
+    font-size: 30px;
+    color: white;
+  }
+  .small-text3{
+    position:fixed;
+    top:38px;
+    right:428px;
+    color:white;
+    font-size: 18px;
+}
+nav, #bilibili-videos {
+    background-color: transparent;
+}
+#bilibili-videos iframe {
+    width: 500px;
+    height: 200px;
+    float:right;
+    margin-right:0px;
+}
+
+.sidebar-container {
+            position: fixed;
+            top: 390px;
+            right: 0px;
+            height: 20%;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: translateX(100%);
+            transition: transform 0.5s;
+            font-size: 16px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .sidebar.sidebar-open {
+            transform: translateX(0);
+        }
+
+    /* 可爱风格的按钮样式 */
+    .toggle-button {
+        position: absolute;
+        top: 70px;
+        right: 250px;
+        background-color: #ff6b6b; /* 按钮背景颜色 */
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 50px; /* 圆角 */
+    }
+
+
+.sidebar.sidebar-open {
+    transform: translateX(0);
+  }
+  
+  
+.music-toggle-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .music-toggle-button {
+            background-color: #ff6b6b; /* 按钮背景颜色 */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 50px; /* 圆角 */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .music-toggle-button:hover {
+            background-color: #ff4f4f; /* 鼠标悬停时的背景颜色 */
+        }
+
+        .music-toggle-button:focus {
+            outline: none;
+        }
+
+        
+        
     </style>
 </head>
-<body class="background">
-    <div class="background">
+<body>
+   <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        <!-- 你也可以在这里添加其他音频格式的 source 元素 -->
+    </audio>
+    <div class="music-toggle-container">
+        <button id="music-toggle" class="music-toggle-button">点击屏幕播放音乐🎵</button>
+    </div>
+    <video class="background-video" autoplay loop muted>
+        <source src="background.mp4" type="video/mp4">
+        <!-- 你也可以在这里添加其他视频格式的 source 元素 -->
+    </video>
         <div class="overlay"></div>
-      </div>
+    
      <div class="small-text2">YIZHAN.YIMING430</div>
      <div class="small-text3">其他网址</div>
         <div class="arrow"></div>
@@ -36,17 +350,29 @@
         <a class="nav-link4" href="https://www.bilibili.com">哔哩哔哩</a>
         <a class="nav-link5" href="https://www.douyin.com">抖音</a>
         <a class="nav-link6" href="https://github.com">Github</a>
-        <a class="nav-link7" href="about.html">关于一个小白的小窝<br>点这里_(•̀ω•́ 」∠)_</a>
+        <a class="nav-link7" href="about.html">一个小白的小窝<br>点这里_(•̀ω•́ 」∠)_</a>
         <div class="title1">欢迎你来到伊洺驿站<br> yizhan.yiming430.xyz</div>
+        <div class="nav-link-container">
         <a class="nav-link1" href="index.html">主页</a>
+        </div>
         <div id="bilibili-videos">
             <iframe src="https://player.bilibili.com/player.html?aid=659738412&bvid=BV1bh4y1Q7fV&cid=1230784022&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         </div>
+        <div class="nav-link-container">
         <a class="nav-link1" href="https://space.bilibili.com/442149069">bilibili小屋</a>
+        </div>
+        <div class="nav-link-container">
         <a class="nav-link1" href="https://bing.yiming430.xyz">BingAI（伊洺部署，不需魔法，但不稳定)</a>
+        </div>
+        <div class="nav-link-container">
         <a class="nav-link1" href="https://www.bing.com/search?q=Bing+AI&showconv=1&FORM=hpcodx">Bing AI（官网，需要魔法)</a>
+        </div>
+        <div class="nav-link-container">
         <a class="nav-link1" href="https://evndt.aitianhu.site/#/chat/1002 ">GPT3.5/4.0（免费无限制,不稳定）</a>
+        </div>
+        <div class="nav-link-container">
         <a class="nav-link1" href="https://c.binjie.fun/#/chat/1692438393770">GPT3.5（免费无限制）</a>
+        </div>
     </nav>
         <div class="sidebar-container">
         
@@ -59,6 +385,18 @@
              <button class="toggle-button" onclick="toggleSidebar()">更多</button>
         </div>
        <script>
+       
+       document.addEventListener("DOMContentLoaded", function() {
+    const title = document.querySelector('.title1');
+
+    // 使用 setTimeout 设置一个延迟，以触发渐变动画
+    setTimeout(() => {
+        title.style.opacity = 1; // 设置透明度为 1，实现渐现效果
+        title.style.transform = 'translateX(0)'; // 将位置恢复到原始位置
+    }, 500); // 延迟 500 毫秒（0.5 秒）
+});
+
+       
         const toggleButton = document.querySelector('.toggle-button');
 const sidebar = document.querySelector('.sidebar');
 
@@ -66,6 +404,52 @@ toggleButton.addEventListener('click', () => {
     sidebar.classList.toggle('sidebar-open');
 });
 
+// Add a JavaScript function to trigger the entrance animation
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.nav-link1');
+    navLinks.forEach((link, index) => {
+        setTimeout(() => {
+            link.classList.add('animate');
+        }, index * 150); // Add a delay for each button
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+            // Rest of your existing code...
+
+            const bgMusic = document.getElementById('bg-music');
+            const musicToggle = document.getElementById('music-toggle');
+            let isMusicPlaying = false;
+
+            musicToggle.addEventListener('click', function(event) {
+                event.stopPropagation();
+                if (isMusicPlaying) {
+                    bgMusic.pause();
+                    isMusicPlaying = false;
+                } else {
+                    bgMusic.play();
+                    isMusicPlaying = true;
+                }
+            });
+
+            bgMusic.addEventListener('ended', function() {
+                bgMusic.currentTime = 0;
+                bgMusic.play();
+            });
+
+            bgMusic.muted = true;
+
+            document.addEventListener('click', function() {
+                if (bgMusic.paused) {
+                    bgMusic.muted = false;
+                    bgMusic.play();
+                }
+            });
+
+            // Rest of your existing code...
+        });
+        
       </script>
       
     </nav>
@@ -73,6 +457,6 @@ toggleButton.addEventListener('click', () => {
     
     
     
-    <script src="main.js"></script>
+ 
 </body>
 </html>
