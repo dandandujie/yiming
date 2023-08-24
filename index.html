@@ -4,7 +4,7 @@
     <title>伊洺驿站</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
 body {
@@ -24,13 +24,18 @@ body {
             align-items: center;
         }
 
-        /* 手机样式 */
+        /* 手机竖屏样式 */
         @media only screen and (max-width: 600px) {
             .container {
                 width: 60%; /* 调整手机样式的宽度 */
             }
         }
-
+        /* 横屏状态下的样式调整 */
+        @media only screen and (orientation: landscape) {
+            .container {
+                width: 60%; /* 调整容器的宽度 */
+            }
+        }
         /* 电脑样式 */
         @media only screen and (min-width: 601px) {
             .container {
@@ -83,6 +88,7 @@ nav {
     opacity: 0; /* Initially set the opacity to 0 */
     transform: translateY(20px); /* Move the button down by 20px */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition effects */
+    color:rgb(39, 134, 242)
 }
 
 /* Add animation for the entrance effect */
@@ -381,6 +387,8 @@ nav, #bilibili-videos {
         <div class="nav-link-container">
         <a class="nav-link1" href="https://c.binjie.fun/#/chat/1692438393770">GPT3.5（免费无限制）</a>
         </div>
+        
+        
     </nav>
         <div class="sidebar-container">
         
