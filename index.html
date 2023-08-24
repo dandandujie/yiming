@@ -15,6 +15,7 @@ body {
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            margin:0;
         }
 
 /* 通用样式 */
@@ -22,30 +23,33 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 80%;
+            margin:auto;
         }
 
         /* 手机竖屏样式 */
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 600px)and (orientation:portrait){
             .container {
-                width: 60%; /* 调整手机样式的宽度 */
+                width: 90%; /* 调整手机样式的宽度 */
             }
         }
         /* 横屏状态下的样式调整 */
-        @media only screen and (orientation: landscape) {
+        @media only screen and (max-width:1024px) and (orientation: landscape) {
             .container {
-                width: 60%; /* 调整容器的宽度 */
+                width: 70%; /* 调整容器的宽度 */
             }
-            
+        
             .nav-link1,
             .nav-link2,
-            .nav-link3,
+             .nav-link3,
             .nav-link4,
             .nav-link5,
             .nav-link6,
             .nav-link7 {
-           margin: 10px 5px; /* 调整按钮之间的间距 */
-    }
+             margin: 10px 5px; /* 调整按钮之间的间距 */
+            }
         }
+
         /* 电脑样式 */
         @media only screen and (min-width: 601px) {
             .container {
